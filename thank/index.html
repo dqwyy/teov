@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>致谢 - 潮V芳名榜</title>
+		<meta name="description" content="潮汕虚拟主播数据库导航资讯站，VRChat潮州會館出品">
+		<meta name="keywords" content="潮汕, 潮州, 揭阳, 汕头, 虚拟主播, VTuber, VUp, VRChat">
+
+		<link href="/css/zh.css" type="text/css" rel="stylesheet">
+		<script src="https://www.w3ccoo.com/lib/w3.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	</head>
+<body>
+
+
+<!-- 引入NAV -->
+<div w3-include-html="/template/nav-zh.html" class="sticky-top"></div>
+
+
+<div class="container bg-body-tertiary shadow">
+<article class="fs-5 px-1">
+<header class="text-center border-primary border-opacity-75 border-bottom border-2 pt-5 pb-4 mx-2 mx-md-5">
+	<h1 class="display-5 fw-medium">致谢</h1>
+</header>
+
+<section class="py-4 px-1 px-md-5 px-lg-5 mx-lg-5">
+
+<div class="indent deng fw-light-p">
+	<p>饮水思源，缘木思本。</p>
+	<p>在本站的建设过程中，使用到了网络上的很多工具，这些工具对本站的建成起到了举足轻重的作用。<strong class="fw-medium">潮V芳名榜</strong>对开发这些工具的团体和个人表示诚挚的感谢。</p>
+</div>
+
+<div class="nobullet text-center mt-4">
+	<h4 class="mt-4">网站托管和部署</h4>
+	<ul>
+		<li><a href="https://github.com/dqwyy/teov" target="_blank" class="lieng">GitHub Pages</a></li>
+	</ul>
+
+	<h4 class="mt-4">层叠样式表和JavaScript库</h4>
+	<ul>
+		<li><a href="https://getbootstrap.com/" target="_blank" class="lieng">Bootstrap</a></li>
+		<li><a href="https://www.w3schools.com/w3js/" target="_blank" class="lieng">W3.JS</a></li>
+	</ul>
+
+	<h4 class="mt-4">字体和图标</h4>
+	<ul>
+		<li><a href="https://fonts.google.com/noto/specimen/Noto+Sans+SC" target="_blank" class="lieng">思源黑体</a>、<a href="https://fonts.google.com/noto/specimen/Noto+Serif+SC" target="_blank" class="lieng">思源宋体</a></li>
+		<li><a href="https://fontawesome.com/" target="_blank" class="lieng">Font Awesome</a></li>
+		<li><a href="https://cdn.jsdelivr.net/npm/twemoji@12.0.2/" target="_blank" class="lieng">Twemoji</a></li>
+	</ul>
+
+	<h4 class="mt-4">内容分发网络</h4>
+	<ul>
+		<li><a href="https://www.bootcdn.cn/" target="_blank" class="lieng">BootCDN</a></li>
+		<li><a href="https://u.sb/css-cdn/" target="_blank" class="lieng">fonts.loli.net</a></li>
+		<li><a href="https://blog.jsdmirror.com/" target="_blank" class="lieng">JSDMirror</a></li>
+		<li><a href="https://www.superbed.cn/" target="_blank" class="lieng">聚合图床</a></li>
+	</ul>
+
+	<h4 class="mt-4">开发工具</h4>
+	<ul>
+		<li><a href="https://browsersync.io/" target="_blank" class="lieng">Browsersync</a></li>
+		<li><a href="https://www.sublimetext.com/" target="_blank" class="lieng">Sublime Text</a></li>
+		<li><a href="https://www.deepseek.com/" target="_blank" class="lieng">深度求索</a></li>
+		<li><a href="https://www.xml-sitemaps.com/" target="_blank" class="lieng">XML-Sitemaps.com</a></li>
+		<li><a href="https://tableconvert.com/" target="_blank" class="lieng">TableConvert</a></li>
+	</ul>
+</div>
+
+</section>
+</article>
+</div>
+
+
+<!-- 引入FOOTER -->
+<div w3-include-html="/template/footer-zh.html"></div>
+
+
+<script>
+	w3.includeHTML(callback);
+	function callback() {
+	// 设置版权声明的当前年份
+	const spanElement = document.getElementById('thisyear');
+	if (spanElement) { // 确保元素存在
+		const currentYear = new Date().getFullYear();
+		spanElement.innerText = currentYear;
+	}
+	// 给NAV对应标签加aria-current
+	var linkElement = document.getElementById('nav-thank');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('active');
+		linkElement.setAttribute('aria-current', 'page');
+	}
+}
+</script>
+
+
+</body>
+</html>
