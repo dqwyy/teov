@@ -22,7 +22,7 @@
 	<h1 class="logo display-1 text-white my-4">潮V芳名榜</h1>
 	<p class="h2 text-white fw-800 serif" style="letter-spacing: .1em;">潮汕虚拟主播数据库导航资讯站</p>
 	<p class="h4 text-white text-uppercase my-3"><span style="margin-right: 1em;"><a href="https://vrcteo.dqwyy.moe/zh.html" target="_blank" data-bs-theme="dark" class="lieng">VRChat潮州會館</a></span>出品</p>
-	<button disabled type="button" class="btn btn-lg btn-light mx-2 my-3 fs-4"><i class="fa-solid fa-file-arrow-down me-1"></i>下载数据</button>
+	<a href="/data/teov-zh.json" download="teov.json" type="button" class="btn btn-lg btn-light mx-2 my-3 fs-4"><i class="fa-solid fa-file-arrow-down me-1"></i>下载数据</a>
 	<a href="https://forms.cloud.microsoft/r/MiqwgnNCXE" target="_blank" type="button" class="btn btn-lg btn-light mx-2 my-3 fs-4"><i class="fa-solid fa-circle-plus me-1"></i>拾遗补阙</i></a>
 </header>
 
@@ -59,186 +59,25 @@
 
 
 <section class="container">
-	<h2 class="h1 text-primary fw-bold text-center mt-5 mb-3">榜列<span class="mx-2 display-4 fw-bold">10</span>翘楚</h2>
-	<div class="bang mx-1 row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 row-gap-4 mb-5">
+	<h2 class="h1 text-primary fw-bold text-center mt-5 mb-3">榜列<span id="count" class="mx-2 display-4 fw-bold">{{count}}</span>翘楚</h2>
+	<div class="bang mx-1 row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 row-gap-4 mb-5" id="bili-list">
 
-		<div class="col" data-uid=b10276136>
+		<div class="col" data-uid=b{{uid}} w3-repeat="bili">
 			<div class="card h-100 border-primary border-2 shadow">
 				<div class="card-body m-4">
-					<img src="/avatar/10276136.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="阿黎Yuri" />
-					<div class="text-center fw-bold my-3 h3">诺子喵呜</div>
+					<img src="/avatar/{{uid}}.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="{{name}}{{name_suffix}}" />
+					<div class="text-center fw-bold my-3 h3">{{name}}<small>{{name_suffix}}</small></div>
 					<dl class="fs-5">
-						<dt>性别</dt><dd>女<span class="F">♀</span></dd>
-						<dt>专长</dt><dd>游戏、闲聊</dd>
-						<dt>所属</dt><dd>(个人势)</dd>
-						<dt>粉丝</dt><dd>205.0万</dd>
+						<dt>性别</dt><dd>{{gender}}</dd>
+						<dt>专长</dt><dd>{{major}}</dd>
+						<dt>所属</dt><dd>{{affiliation}}</dd>
+						<dt>粉丝</dt><dd>{{follower}}万</dd>
+						<cite class="d-none">{{proof}}</cite>
 					</dl>
-					<div class="text-center"><a href="https://space.bilibili.com/10276136" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
+					<div class="text-center"><a href="https://space.bilibili.com/{{uid}}" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
 				</div>
 			</div>
 		</div>
-
-		<div class="col" data-uid=b24580238>
-			<div class="card h-100 border-primary border-2 shadow">
-				<div class="card-body m-4">
-					<img src="/avatar/24580238.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="阿黎Yuri" />
-					<div class="text-center fw-bold my-3 h3">阿黎Yuri</div>
-					<dl class="fs-5">
-						<dt>性别</dt><dd>女<span class="F">♀</span></dd>
-						<dt>专长</dt><dd>唱歌</dd>
-						<dt>所属</dt><dd>(个人势)</dd>
-						<dt>粉丝</dt><dd>3.6万</dd>
-					</dl>
-					<div class="text-center"><a href="https://space.bilibili.com/24580238" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col" data-uid=b1334188730>
-			<div class="card h-100 border-primary border-2 shadow">
-				<div class="card-body m-4">
-					<img src="/avatar/1334188730.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="墨余子_Channel" />
-					<div class="text-center fw-bold my-3 h3">墨余子<small>_Channel</small></div>
-					<dl class="fs-5">
-						<dt>性别</dt><dd>女<span class="F">♀</span></dd>
-						<dt>专长</dt><dd>唱歌</dd>
-						<dt>所属</dt><dd>M94 Project</dd>
-						<dt>粉丝</dt><dd>3.2万</dd>
-					</dl>
-					<div class="text-center"><a href="https://space.bilibili.com/1334188730" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col" data-uid=b2096043427>
-			<div class="card h-100 border-primary border-2 shadow">
-				<div class="card-body m-4">
-					<img src="/avatar/2096043427.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="安赫尔Angelos" />
-					<div class="text-center fw-bold my-3 h3">安赫尔Angelos</div>
-					<dl class="fs-5">
-						<dt>性别</dt><dd>女<span class="F">♀</span></dd>
-						<dt>专长</dt><dd>唱歌</dd>
-						<dt>所属</dt><dd>不乐社</dd>
-						<dt>粉丝</dt><dd>1.9万</dd>
-					</dl>
-					<div class="text-center"><a href="https://space.bilibili.com/2096043427" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col" data-uid=b3546562676394905>
-			<div class="card h-100 border-primary border-2 shadow">
-				<div class="card-body m-4">
-					<img src="/avatar/3546562676394905.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="阿妤Yuki" />
-					<div class="text-center fw-bold my-3 h3">阿妤Yuki</div>
-					<dl class="fs-5">
-						<dt>性别</dt><dd>女<span class="F">♀</span></dd>
-						<dt>专长</dt><dd>唱歌</dd>
-						<dt>所属</dt><dd>(个人势)</dd>
-						<dt>粉丝</dt><dd>1.2万</dd>
-					</dl>
-					<div class="text-center"><a href="https://space.bilibili.com/3546562676394905" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col" data-uid=b3461565349104457>
-			<div class="card h-100 border-primary border-2 shadow">
-				<div class="card-body m-4">
-					<img src="/avatar/3461565349104457.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="就是苏饼饼" />
-					<div class="text-center fw-bold my-3 h3">就是苏饼饼</div>
-					<dl class="fs-5">
-						<dt>性别</dt><dd>女<span class="F">♀</span></dd>
-						<dt>专长</dt><dd>唱歌</dd>
-						<dt>所属</dt><dd>(个人势)</dd>
-						<dt>粉丝</dt><dd>1.2万</dd>
-					</dl>
-					<div class="text-center"><a href="https://space.bilibili.com/3461565349104457" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col" data-uid=b661968348>
-			<div class="card h-100 border-primary border-2 shadow">
-				<div class="card-body m-4">
-					<img src="/avatar/661968348.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="樱田春春-可爱御姐版" />
-					<div class="text-center fw-bold my-3 h3">樱田春春<small>-可爱御姐版</small></div>
-					<dl class="fs-5">
-						<dt>性别</dt><dd>女<span class="F">♀</span></dd>
-						<dt>专长</dt><dd>闲聊</dd>
-						<dt>所属</dt><dd>(个人势)</dd>
-						<dt>粉丝</dt><dd>1.1万</dd>
-					</dl>
-					<div class="text-center"><a href="https://space.bilibili.com/661968348" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col" data-uid=b1459446062>
-			<div class="card h-100 border-primary border-2 shadow">
-				<div class="card-body m-4">
-					<img src="/avatar/1459446062.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="桃乃Peach" />
-					<div class="text-center fw-bold my-3 h3">桃乃Peach</div>
-					<dl class="fs-5">
-						<dt>性别</dt><dd>女<span class="F">♀</span></dd>
-						<dt>专长</dt><dd>唱歌</dd>
-						<dt>所属</dt><dd>(个人势)</dd>
-						<dt>粉丝</dt><dd>1.0万</dd>
-					</dl>
-					<div class="text-center"><a href="https://space.bilibili.com/1459446062" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col" data-uid=b1343341>
-			<div class="card h-100 border-primary border-2 shadow">
-				<div class="card-body m-4">
-					<img src="/avatar/1343341.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="麦麦麦子小姐" />
-					<div class="text-center fw-bold my-3 h3">麦麦麦子小姐</div>
-					<dl class="fs-5">
-						<dt>性别</dt><dd>女<span class="F">♀</span></dd>
-						<dt>专长</dt><dd>唱歌</dd>
-						<dt>所属</dt><dd>(个人势)</dd>
-						<dt>粉丝</dt><dd>0.8万</dd>
-					</dl>
-					<div class="text-center"><a href="https://space.bilibili.com/1343341" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col" data-uid=b3493293191072549>
-			<div class="card h-100 border-primary border-2 shadow">
-				<div class="card-body m-4">
-					<img src="/avatar/3493293191072549.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="小鱼好困zZ" />
-					<div class="text-center fw-bold my-3 h3">小鱼好困<small>zZ</small></div>
-					<dl class="fs-5">
-						<dt>性别</dt><dd>女<span class="F">♀</span></dd>
-						<dt>专长</dt><dd>唱歌</dd>
-						<dt>所属</dt><dd>(个人势)</dd>
-						<dt>粉丝</dt><dd>0.4万</dd>
-					</dl>
-					<div class="text-center"><a href="https://space.bilibili.com/3493293191072549" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
-				</div>
-			</div>
-		</div>
-
-<!-- 继续添加
-		<div class="col" data-uid=b0000000000>
-			<div class="card h-100 border-primary border-2 shadow">
-				<div class="card-body m-4">
-					<img src="/avatar/0000000000.webp" class="rounded-circle mx-auto d-block img-thumbnail shadow" alt="###" />
-					<div class="text-center fw-bold my-3 h3">###</div>
-					<dl class="fs-5">
-						<dt>性别</dt><dd>女<span class="F">♀</span></dd>
-						<dt>专长</dt><dd>唱歌</dd>
-						<dt>所属</dt><dd>(个人势)</dd>
-						<dt>粉丝</dt><dd>万</dd>
-					</dl>
-					<div class="text-center"><a href="https://space.bilibili.com/0000000000" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
-				</div>
-			</div>
-		</div>
--->
 
 		<div class="col" data-uid=b0000000000>
 			<div class="card h-100 border-primary border-2" style="border-style: dashed;">
@@ -273,6 +112,11 @@
 		linkElement.setAttribute('aria-current', 'page');
 	}
 }
+	// 从json读取虚拟主播信息写入网页
+	w3.getHttpObject("/data/teov-zh.json", function(myData) {
+		w3.displayObject("bili-list", myData);
+		w3.displayObject("count", myData);
+	});
 </script>
 
 

@@ -89,8 +89,10 @@ abbr[title] {
 .fw-100{font-weight: 100;}
 .fw-light-p p, .fw-light-p li{font-weight: 340;}
 
+small:empty{display: none;}
+
 /* 用于文章，提供缩进，缩减mb */
-.indent{text-indent: 2em;}
+.indent p{text-indent: 2em;}
 .noindent{text-indent: 0;}
 .deng p{margin-bottom: .5rem;}  /* 移除段落p的mb-3即1rem，改为mb-2即.5rem */
 
