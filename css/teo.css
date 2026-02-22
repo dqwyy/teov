@@ -4,9 +4,26 @@
 @import url("https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css");
 
 @import url('https://fonts.loli.net/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
+@import url('https://fonts.loli.net/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
 @import url('https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@200..900&display=swap');
-@import url('https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
 @import url('https://fonts.loli.net/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.loli.net/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+@font-face {
+  font-family: "Noto Sans TEO";
+  src: url("https://vrcteo.dqwyy.moe/font/NotoSansTEO-Light.woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Noto Sans TEO";
+  src: url("https://vrcteo.dqwyy.moe/font/NotoSansTEO-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Noto Sans TEO";
+  src: url("https://vrcteo.dqwyy.moe/font/NotoSansTEO-Medium.woff2");
+  font-weight: 500;
+}
 
 /*B站粉色色号，仅作备忘用*/
 .bili{
@@ -26,7 +43,7 @@
 :root{
 	--bs-primary: #FF6699;
 	--bs-primary-rgb: 232, 75, 133;
-	--bs-font-sans-serif: "Noto Sans SC", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--bs-font-sans-serif: "Noto Sans TEO", "Noto Sans KR", "Noto Sans TC", "Noto Sans SC", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 :root{
   --bs-link-color: #E84B85;
@@ -57,23 +74,6 @@
   --bs-btn-disabled-bg: #f8f9fa;
   --bs-btn-disabled-border-color: #f8f9fa;
 }
-.btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #FF6699;
-  --bs-btn-border-color: #FF6699;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #E84B85;
-  --bs-btn-hover-border-color: #E84B85;
-  --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #E84B85;
-  --bs-btn-active-border-color: #E84B85;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #FF6699;
-  --bs-btn-disabled-border-color: #FF6699;
-}
-
 abbr[title] {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
@@ -94,7 +94,7 @@ abbr[title] {
   text-transform: full-width;
   letter-spacing: .2em;
 }
-.serif{font-family: "Noto Serif SC", "SimSun", serif;}
+.serif{font-family: "Noto Serif KR", "Noto Serif TC", "Noto Serif SC", "SimSun", serif;}
 .fw-900,.fw-black,.fw-heavy{font-weight: 900;}
 .fw-800{font-weight: 800;}
 .fw-700{font-weight: 700;}
@@ -119,7 +119,7 @@ ul.nobullet {list-style: none;}
 /* 名榜.bang  页脚.ka  自定义dl样式 */
 .bang dt, .bang dd, .ka dt, .ka dd{display: inline;}
 .bang dt{font-weight: 500;}
-.bang dd{font-weight: 310;}
+.bang dd{font-weight: 300;}
 .ka dt{font-weight: 400;}
 .ka dd{font-weight: 400;}
 .bang dt:not(:first-child)::before, .ka dt:not(:first-child)::before{content: "\A"; white-space: pre;}
@@ -138,7 +138,7 @@ ul.nobullet {list-style: none;}
     text-decoration-color: rgba(var(--bs-link-color-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-span.女:after{content: "♀"; color: #E84B85; font-weight: 900;}
+span.姿娘:after{content: "♀"; color: #E84B85; font-weight: 900;}
 
 address{display: inline;}
 u{text-underline-offset: 0.22em; text-decoration-color: rgba(0,0,0,0.7);}

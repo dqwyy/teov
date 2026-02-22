@@ -1,10 +1,11 @@
 import json
 import requests
 from pathlib import Path
+from datetime import date
 
 # 输入和输出文件路径（与脚本同目录）
-INPUT_FILE = Path("teov-zh.json")
-OUTPUT_FILE = Path("teov-zh.update.json")
+INPUT_FILE = Path("teov-teo.json")
+OUTPUT_FILE = Path("teov-teo.update.json")
 
 # API 地址模板
 API_URL_TEMPLATE = "https://api.vtbs.moe/v1/detail/{}"
@@ -55,6 +56,9 @@ def main():
     bili_list.sort(key=lambda x: x["follower"], reverse=True)
     data["bili"] = bili_list
     data["count"] = len(bili_list)
+
+    # 添加更新日期
+    data["update_date"] = date.today().isoformat()
 
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent='\t')  # 使用 tab 缩进
