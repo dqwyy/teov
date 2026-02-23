@@ -1,16 +1,17 @@
 {
 	"count": 17,
-	"update_date": "2026-02-22",
+	"update_date": "2026-02-23",
 	"bili": [
 		{
 			"uid": "10276136",
 			"name": "诺子喵呜",
 			"name_suffix": "",
 			"gender": "女",
-			"major": "游戏、日常",
+			"major": "杂谈、游戏",
 			"affiliation": "(个人势)",
-			"follower": 205.2,
-			"proof": "https://www.bilibili.com/video/BV147Z1BDEC7"
+			"follower": 205.3,
+			"proof": "https://www.bilibili.com/video/BV147Z1BDEC7",
+			"follower_display": "205.3"
 		},
 		{
 			"uid": "24580238",
@@ -20,17 +21,19 @@
 			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 3.6,
-			"proof": "https://www.bilibili.com/video/BV1SM4y1n7pS"
+			"proof": "https://www.bilibili.com/video/BV1SM4y1n7pS",
+			"follower_display": "3.6"
 		},
 		{
 			"uid": "630942745",
 			"name": "肉包子ye",
 			"name_suffix": "",
 			"gender": "女",
-			"major": "闲聊",
+			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 3.3,
-			"proof": "https://www.bilibili.com/video/BV1jGFce9E9S"
+			"proof": "https://www.bilibili.com/video/BV1jGFce9E9S",
+			"follower_display": "3.3"
 		},
 		{
 			"uid": "1334188730",
@@ -40,7 +43,8 @@
 			"major": "唱歌",
 			"affiliation": "M94_Project",
 			"follower": 3.2,
-			"proof": "https://www.bilibili.com/video/BV1sBXyYgENF"
+			"proof": "https://www.bilibili.com/video/BV1sBXyYgENF",
+			"follower_display": "3.2"
 		},
 		{
 			"uid": "2096043427",
@@ -50,7 +54,8 @@
 			"major": "唱歌",
 			"affiliation": "M94_Project",
 			"follower": 1.9,
-			"proof": "https://www.bilibili.com/video/BV1sE421F7Co"
+			"proof": "https://www.bilibili.com/video/BV1sE421F7Co",
+			"follower_display": "1.9"
 		},
 		{
 			"uid": "3546562676394905",
@@ -60,7 +65,8 @@
 			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 1.2,
-			"proof": "https://www.bilibili.com/video/BV11j421R7Uy"
+			"proof": "https://www.bilibili.com/video/BV11j421R7Uy",
+			"follower_display": "1.2"
 		},
 		{
 			"uid": "3461565349104457",
@@ -70,17 +76,19 @@
 			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 1.2,
-			"proof": "https://www.bilibili.com/video/BV1yG411i7xr"
+			"proof": "https://www.bilibili.com/video/BV1yG411i7xr",
+			"follower_display": "1.2"
 		},
 		{
 			"uid": "661968348",
 			"name": "樱田春春",
 			"name_suffix": "-可爱御姐版",
 			"gender": "女",
-			"major": "闲聊",
+			"major": "杂谈",
 			"affiliation": "(个人势)",
 			"follower": 1.1,
-			"proof": "https://www.bilibili.com/video/BV1NxG4zeEJf"
+			"proof": "https://www.bilibili.com/video/BV1NxG4zeEJf",
+			"follower_display": "1.1"
 		},
 		{
 			"uid": "1459446062",
@@ -90,7 +98,8 @@
 			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 1.0,
-			"proof": "https://www.bilibili.com/video/BV1MM4y1w74D"
+			"proof": "https://www.bilibili.com/video/BV1MM4y1w74D",
+			"follower_display": "1.0"
 		},
 		{
 			"uid": "1343341",
@@ -100,7 +109,8 @@
 			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.8,
-			"proof": "https://www.bilibili.com/video/BV14a4y1Q7yU"
+			"proof": "https://www.bilibili.com/video/BV14a4y1Q7yU",
+			"follower_display": "0.8"
 		},
 		{
 			"uid": "3493293191072549",
@@ -110,7 +120,8 @@
 			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.4,
-			"proof": "https://www.bilibili.com/video/BV1es4y1C7WX"
+			"proof": "https://www.bilibili.com/video/BV1es4y1C7WX",
+			"follower_display": "0.4"
 		},
 		{
 			"uid": "3546949055679185",
@@ -120,7 +131,8 @@
 			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.4,
-			"proof": "https://www.bilibili.com/video/BV1FwXhYtENN"
+			"proof": "https://www.bilibili.com/video/BV1FwXhYtENN",
+			"follower_display": "0.4"
 		},
 		{
 			"uid": "3546813518842244",
@@ -130,7 +142,8 @@
 			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.3,
-			"proof": "https://www.bilibili.com/video/BV1YyS5BpEPK"
+			"proof": "https://www.bilibili.com/video/BV1YyS5BpEPK",
+			"follower_display": "0.3"
 		},
 		{
 			"uid": "688877188",
@@ -140,7 +153,8 @@
 			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.2,
-			"proof": "https://www.bilibili.com/video/BV11J4m1V7pa"
+			"proof": "https://www.bilibili.com/video/BV11J4m1V7pa",
+			"follower_display": "0.2"
 		},
 		{
 			"uid": "1795283605",
@@ -150,7 +164,8 @@
 			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.2,
-			"proof": "https://www.bilibili.com/video/BV1Bnk6BJEZZ"
+			"proof": "https://www.bilibili.com/video/BV1Bnk6BJEZZ",
+			"follower_display": "0.2"
 		},
 		{
 			"uid": "3546650417039520",
@@ -160,7 +175,8 @@
 			"major": "唱歌",
 			"affiliation": "M94_Project",
 			"follower": 0.2,
-			"proof": "https://www.bilibili.com/video/BV1apFWeLEyY"
+			"proof": "https://www.bilibili.com/video/BV1apFWeLEyY",
+			"follower_display": "0.2"
 		},
 		{
 			"uid": "2115173599",
@@ -170,7 +186,8 @@
 			"major": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.1,
-			"proof": "https://www.bilibili.com/video/BV1GQC3B8E4V"
+			"proof": "https://www.bilibili.com/video/BV1GQC3B8E4V",
+			"follower_display": "0.1"
 		}
 	]
 }
