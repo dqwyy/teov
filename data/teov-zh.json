@@ -1,193 +1,210 @@
 {
 	"count": 17,
-	"update_date": "2026-02-23",
+	"update_date": "2026-02-24",
 	"bili": [
 		{
 			"uid": "10276136",
 			"name": "诺子喵呜",
 			"name_suffix": "",
 			"gender": "女",
-			"major": "杂谈、游戏",
+			"content": "杂谈、游戏",
 			"affiliation": "(个人势)",
 			"follower": 205.3,
 			"proof": "https://www.bilibili.com/video/BV147Z1BDEC7",
-			"follower_display": "205.3"
+			"follower_display": "205.3",
+			"vtbsmoe": true
 		},
 		{
 			"uid": "24580238",
 			"name": "阿黎",
 			"name_suffix": "Yuri",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 3.6,
 			"proof": "https://www.bilibili.com/video/BV1SM4y1n7pS",
-			"follower_display": "3.6"
+			"follower_display": "3.6",
+			"vtbsmoe": false
 		},
 		{
 			"uid": "630942745",
 			"name": "肉包子ye",
 			"name_suffix": "",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 3.3,
 			"proof": "https://www.bilibili.com/video/BV1jGFce9E9S",
-			"follower_display": "3.3"
+			"follower_display": "3.3",
+			"vtbsmoe": true
 		},
 		{
 			"uid": "1334188730",
 			"name": "墨余子",
 			"name_suffix": "_Channel",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "M94_Project",
 			"follower": 3.2,
 			"proof": "https://www.bilibili.com/video/BV1sBXyYgENF",
-			"follower_display": "3.2"
+			"follower_display": "3.2",
+			"vtbsmoe": false
 		},
 		{
 			"uid": "2096043427",
 			"name": "安赫尔",
 			"name_suffix": "Angelos",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "M94_Project",
 			"follower": 1.9,
 			"proof": "https://www.bilibili.com/video/BV1sE421F7Co",
-			"follower_display": "1.9"
+			"follower_display": "1.9",
+			"vtbsmoe": true
 		},
 		{
 			"uid": "3546562676394905",
 			"name": "阿妤",
 			"name_suffix": "Yuki",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 1.2,
 			"proof": "https://www.bilibili.com/video/BV11j421R7Uy",
-			"follower_display": "1.2"
+			"follower_display": "1.2",
+			"vtbsmoe": false
 		},
 		{
 			"uid": "3461565349104457",
 			"name": "就是苏饼饼",
 			"name_suffix": "",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 1.2,
 			"proof": "https://www.bilibili.com/video/BV1yG411i7xr",
-			"follower_display": "1.2"
+			"follower_display": "1.2",
+			"vtbsmoe": false
 		},
 		{
 			"uid": "661968348",
 			"name": "樱田春春",
 			"name_suffix": "-可爱御姐版",
 			"gender": "女",
-			"major": "杂谈",
+			"content": "杂谈",
 			"affiliation": "(个人势)",
 			"follower": 1.1,
 			"proof": "https://www.bilibili.com/video/BV1NxG4zeEJf",
-			"follower_display": "1.1"
+			"follower_display": "1.1",
+			"vtbsmoe": false
 		},
 		{
 			"uid": "1459446062",
 			"name": "桃乃",
 			"name_suffix": "Peach",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 1.0,
 			"proof": "https://www.bilibili.com/video/BV1MM4y1w74D",
-			"follower_display": "1.0"
+			"follower_display": "1.0",
+			"vtbsmoe": true
 		},
 		{
 			"uid": "1343341",
 			"name": "麦麦麦子小姐",
 			"name_suffix": "",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.8,
 			"proof": "https://www.bilibili.com/video/BV14a4y1Q7yU",
-			"follower_display": "0.8"
+			"follower_display": "0.8",
+			"vtbsmoe": false
 		},
 		{
 			"uid": "3493293191072549",
 			"name": "小鱼好困zZ",
 			"name_suffix": "",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.4,
 			"proof": "https://www.bilibili.com/video/BV1es4y1C7WX",
-			"follower_display": "0.4"
+			"follower_display": "0.4",
+			"vtbsmoe": true
 		},
 		{
 			"uid": "3546949055679185",
 			"name": "oi鱼饼酱_",
 			"name_suffix": "",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.4,
 			"proof": "https://www.bilibili.com/video/BV1FwXhYtENN",
-			"follower_display": "0.4"
+			"follower_display": "0.4",
+			"vtbsmoe": false
 		},
 		{
 			"uid": "3546813518842244",
 			"name": "是米茶茶欸",
 			"name_suffix": "",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.3,
 			"proof": "https://www.bilibili.com/video/BV1YyS5BpEPK",
-			"follower_display": "0.3"
+			"follower_display": "0.3",
+			"vtbsmoe": false
 		},
 		{
 			"uid": "688877188",
 			"name": "紫涵",
 			"name_suffix": "Hime",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.2,
 			"proof": "https://www.bilibili.com/video/BV11J4m1V7pa",
-			"follower_display": "0.2"
+			"follower_display": "0.2",
+			"vtbsmoe": false
 		},
 		{
 			"uid": "1795283605",
 			"name": "六六想啃竹子la",
 			"name_suffix": "",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.2,
 			"proof": "https://www.bilibili.com/video/BV1Bnk6BJEZZ",
-			"follower_display": "0.2"
+			"follower_display": "0.2",
+			"vtbsmoe": true
 		},
 		{
 			"uid": "3546650417039520",
 			"name": "言堇堇",
 			"name_suffix": "Sumire",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "M94_Project",
 			"follower": 0.2,
 			"proof": "https://www.bilibili.com/video/BV1apFWeLEyY",
-			"follower_display": "0.2"
+			"follower_display": "0.2",
+			"vtbsmoe": true
 		},
 		{
 			"uid": "2115173599",
 			"name": "林子",
 			"name_suffix": "_lynn_唱见连",
 			"gender": "女",
-			"major": "唱歌",
+			"content": "唱歌",
 			"affiliation": "(个人势)",
 			"follower": 0.1,
 			"proof": "https://www.bilibili.com/video/BV1GQC3B8E4V",
-			"follower_display": "0.1"
+			"follower_display": "0.1",
+			"vtbsmoe": false
 		}
 	]
 }

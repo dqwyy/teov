@@ -3,9 +3,9 @@
 @import url("https://cdn.bootcdn.net/ajax/libs/font-awesome/7.0.1/css/all.min.css");
 @import url("https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css");
 
-@import url('https://fonts.loli.net/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
-@import url('https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@200..900&display=swap');
+@import url('https://fonts.loli.net/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+@import url('https://fonts.loli.net/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*B站粉色色号，仅作备忘用*/
 .bili{
@@ -25,7 +25,7 @@
 :root{
 	--bs-primary: #FF6699;
 	--bs-primary-rgb: 232, 75, 133;
-	--bs-font-sans-serif: "Noto Sans SC", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--bs-font-sans-serif: "Roboto", "Noto Sans SC", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 :root{
 	--bs-link-color: #E84B85;
@@ -139,13 +139,15 @@ abbr[title] {
 
 /* == 自定义类 == */
 .logo {
-	font-family: "Noto Serif KR", "SimSun", serif;
+	font-family: 'Noto Serif', serif;
 	font-optical-sizing: auto;
 	font-weight: 900;
-	text-transform: full-width;
-	letter-spacing: .2em;
+	text-transform: uppercase;
+	letter-spacing: ;
+	word-spacing: .1em;
 }
-.serif{font-family: "Noto Serif SC", "SimSun", serif;}
+.small-caps{font-variant: small-caps;}
+.serif{font-family: "Noto Serif" ,serif;}
 .fw-900,.fw-black,.fw-heavy{font-weight: 900;}
 .fw-800{font-weight: 800;}
 .fw-700{font-weight: 700;}
@@ -174,7 +176,7 @@ ul.nobullet {list-style: none;}
 .ka dt{font-weight: 400;}
 .ka dd{font-weight: 400;}
 .bang dt:not(:first-child)::before, .ka dt:not(:first-child)::before{content: "\A"; white-space: pre;}
-.bang dt::after, .ka dt::after{content:"：";}
+.bang dt::after, .ka dt::after{content:": ";}
 
 /* 链.lieng = link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-75-hover */
 .lieng {
@@ -189,8 +191,7 @@ ul.nobullet {list-style: none;}
 		text-decoration-color: rgba(var(--bs-link-color-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-span.女:after{content: "♀"; color: #E84B85; font-weight: 900;}
-dd.vtbsmoe_false, td.vtbsmoe_false{}
+span.Female:after{content: "♀"; color: #E84B85; font-weight: 900;}
 
 address{display: inline;}
 u{text-underline-offset: 0.22em; text-decoration-color: rgba(0,0,0,0.7);}

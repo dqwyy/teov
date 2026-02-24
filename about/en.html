@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>About - TEO-V Name List</title>
+		<meta name="description" content="The Teochew VTuber Database, presented by VRChat Teochew Association.">
+		<meta name="keywords" content="Teochew, 潮汕, 潮州, 揭阳, 汕头, 虚拟主播, VTuber, VUp, VRChat">
+
+		<link href="/css/en.css" type="text/css" rel="stylesheet">
+		<script src="https://www.w3ccoo.com/lib/w3.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	</head>
+<body>
+
+
+<!-- 引入NAV -->
+<div w3-include-html="/template/nav-en.html" class="sticky-top"></div>
+
+
+<div class="container bg-body-tertiary shadow">
+<article class="fs-5 px-1">
+<header class="text-center border-primary border-opacity-75 border-bottom border-2 pt-5 pb-4 mx-2 mx-md-5">
+	<h1 class="display-5 fw-medium">About</h1>
+	<address>dqwyy</address><br />
+	<time datetime="2026-02-16">February 16th, 2026</time>
+</header>
+
+<section class="py-4 px-1 px-md-5 px-lg-5 mx-lg-5">
+<p>Welcome to the <em class="fw-medium">TEO-V Name List</em>. I am <em>DQ</em>, the admin.</p>
+
+<h2>Contact</h2>
+<ul>
+	<li>Submit new Teochew VTubers via <a href="https://forms.cloud.microsoft/r/MiqwgnNCXE" target="_blank" class="lieng fst-italic">this Microsoft Form</a></li>
+	<li>Email: <code>me@dqwyy.moe</code></li>
+	<li>Play <a href="https://store.steampowered.com/app/438100/VRChat/" target="_blank" class="lieng fst-italic">VRChat</a> with me and other <em>gaginang</em></li>
+</ul>
+
+
+</section>
+
+</article>
+</div>
+
+
+<!-- 引入FOOTER -->
+<div w3-include-html="/template/footer-en.html"></div>
+
+
+<script>
+	w3.includeHTML(callback);
+	function callback() {
+	// 设置版权声明的当前年份
+	const spanElement = document.getElementById('thisyear');
+	if (spanElement) { // 确保元素存在
+		const currentYear = new Date().getFullYear();
+		spanElement.innerText = currentYear;
+	}
+	// 给NAV对应标签加aria-current
+	var linkElement = document.getElementById('nav-about');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('active');
+		linkElement.setAttribute('aria-current', 'page');
+	}
+}
+</script>
+
+
+</body>
+</html>

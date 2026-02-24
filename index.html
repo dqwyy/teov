@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>潮V芳名榜</title>
 		<meta name="description" content="潮汕虚拟主播数据库导航资讯站，VRChat潮州會館出品">
-		<meta name="keywords" content="潮汕, 潮州, 揭阳, 汕头, 虚拟主播, VTuber, VUp, VRChat">
+		<meta name="keywords" content="Teochew, 潮汕, 潮州, 揭阳, 汕头, 虚拟主播, VTuber, VUp, VRChat">
 
 		<link href="/css/zh.css" type="text/css" rel="stylesheet">
 		<script src="https://www.w3ccoo.com/lib/w3.js"></script>
@@ -22,7 +22,7 @@
 	<h1 class="logo display-1 text-white my-4">潮V芳名榜</h1>
 	<p class="h2 text-white fw-800 serif" style="letter-spacing: .1em;">潮汕虚拟主播数据库导航资讯站</p>
 	<p class="h4 text-white text-uppercase my-3"><span style="margin-right: 1em;"><a href="https://vrcteo.dqwyy.moe/zh.html" target="_blank" data-bs-theme="dark" class="lieng">VRChat潮州會館</a></span>出品</p>
-	<a href="/data/teov-zh.json" download="teov.json" type="button" class="btn btn-lg btn-light mx-2 my-3 fs-4"><i class="fa-solid fa-file-arrow-down me-1"></i>下载数据</a>
+	<a href="/data/teov-zh.json" download type="button" class="btn btn-lg btn-light mx-2 my-3 fs-4"><i class="fa-solid fa-file-arrow-down me-1"></i>下载数据</a>
 	<a href="https://forms.cloud.microsoft/r/MiqwgnNCXE" target="_blank" type="button" class="btn btn-lg btn-light mx-2 my-3 fs-4"><i class="fa-solid fa-circle-plus me-1"></i>拾遗补阙</i></a>
 </header>
 
@@ -83,9 +83,9 @@
 					<div class="text-center fw-bold my-3 h3">{{name}}<small>{{name_suffix}}</small></div>
 					<dl class="fs-5">
 						<dt>性别</dt><dd>{{gender}}<span class="{{gender}}"></span></dd>
-						<dt>专长</dt><dd>{{major}}</dd>
+						<dt>专长</dt><dd>{{content}}</dd>
 						<dt>所属</dt><dd>{{affiliation}}</dd>
-						<dt>粉丝</dt><dd>{{follower_display}}万</dd>
+						<dt>粉丝</dt><dd class="vtbsmoe_{{vtbsmoe}}">{{follower_display}}万</dd>
 						<cite class="d-none">{{proof}}</cite>
 					</dl>
 					<div class="text-center"><a href="https://space.bilibili.com/{{uid}}" target="_blank"><i class="fa-brands fa-2xl fa-bilibili text-primary"></i></a></div>
@@ -128,7 +128,7 @@
 					<th scope="col">性别</th>
 					<th scope="col">专长</th>
 					<th scope="col">所属</th>
-					<th scope="col" width="1%;">粉丝</th>
+					<th scope="col" width="1%;"><abbr title="非实时数据">粉丝</abbr></th>
 					<th scope="col">平台</th>
 				</tr>
 			</thead>
@@ -136,10 +136,9 @@
 				<tr class="text-nowrap tai" w3-repeat="bili">
 					<th scope="row" class="fw-medium text-start pe-3"><img src="/avatar/{{uid}}.webp" class="rounded-circle me-3" height="50px;" alt="{{name}}" />{{name}}<small class="d-lg-none">{{name_suffix}}</small><span class="d-none d-lg-inline">{{name_suffix}}</span></th>
 					<td>{{gender}}<span class="{{gender}}"></span></td>
-					<td>{{major}}</td>
+					<td>{{content}}</td>
 					<td>{{affiliation}}</td>
-					<td class="text-end">{{follower_display}}万</td>
-					<td class="d-none">{{follower}}</td>
+					<td class="text-end vtbsmoe_{{vtbsmoe}}">{{follower_display}}万</td>
 					<td><a href="https://space.bilibili.com/{{uid}}" target="_blank" class="lieng"><i class="fa-brands fa-xl fa-bilibili text-primary"></i><span class="d-none d-xl-inline">bilibili</span></a></td>
 				</tr>
 			</tbody>

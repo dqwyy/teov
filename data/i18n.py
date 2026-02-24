@@ -17,7 +17,8 @@ en_translation_map = {
 	"游戏": "Game",
 	"唱歌": "Sing",
 	"绘画": "Draw",
-	"(个人势)": "(Independent)"
+	"(个人势)": "(Indie)",
+	"、": ", "
 }
 
 def translate_text(text: str, trans_map: dict) -> str:
@@ -47,7 +48,7 @@ def main():
 
 	# 翻译潮州话版本
 	for item in data_teo.get("bili", []):
-		for field in ["gender", "major", "affiliation"]:
+		for field in ["gender", "content", "affiliation"]:
 			if field in item:
 				item[field] = translate_text(item[field], teo_translation_map)
 
@@ -56,7 +57,7 @@ def main():
 
 	# 翻译英文版本
 	for item in data_en.get("bili", []):
-		for field in ["gender", "major", "affiliation"]:
+		for field in ["gender", "content", "affiliation"]:
 			if field in item:
 				item[field] = translate_text(item[field], en_translation_map)
 

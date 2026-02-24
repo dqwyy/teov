@@ -5,7 +5,7 @@ from datetime import date
 
 # 输入和输出文件路径（与脚本同目录）
 INPUT_FILE = Path("teov-zh.json")
-OUTPUT_FILE = Path("teov-zh.update.json")
+OUTPUT_FILE = Path("teov-zh.json")
 
 # API 地址模板
 API_URL_TEMPLATE = "https://api.vtbs.moe/v1/detail/{}"
@@ -47,23 +47,24 @@ def main():
         if new_follower_int is not None:
             new_follower_wan = convert_to_wan(new_follower_int)
             item["follower"] = new_follower_wan
-            
-            # 只增加這一行：新增 follower_display 為字串格式
+            # 增加 follower_display 为字符串格式
             item["follower_display"] = f"{new_follower_wan:.1f}"
-            
+            # 标记为 vtbs.moe 可获取
+            item["vtbsmoe"] = True
             updated_count += 1
             print(f"更新 {item['name']} (UID:{uid}): {new_follower_wan} 万")
         else:
+            # 获取失败，标记 vtbs.moe 为 False，保留原粉丝数
+            item["vtbsmoe"] = False
             print(f"未收录或更新失败，保留原值: {item['name']} (UID:{uid})")
 
-    # ─────────────── 新增的部分 ───────────────
-    # 統一為所有 item 產生 follower_display（保證每個都有）
+    # 统一为所有 item 生成 follower_display（保证每个都有）
     for item in bili_list:
         follower_val = item.get("follower")
         if isinstance(follower_val, (int, float)):
             item["follower_display"] = f"{float(follower_val):.1f}"
         else:
-            item["follower_display"] = "0.0"  # 預設值，可改成 "--" 或其他
+            item["follower_display"] = "0.0"  # 默认值
 
     # 将 bili 列表按 follower 降序排序
     bili_list.sort(key=lambda x: x["follower"], reverse=True)
