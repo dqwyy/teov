@@ -192,6 +192,7 @@ ul.nobullet {list-style: none;}
 }
 
 span.Female:after{content: "♀"; color: #E84B85; font-weight: 900;}
+dd.\(Indie\){font-style: italic;}
 
 address{display: inline;}
 u{text-underline-offset: 0.22em; text-decoration-color: rgba(0,0,0,0.7);}
