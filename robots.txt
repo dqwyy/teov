@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /avatar/
+Disallow: /css/
+Disallow: /template/
+
+Sitemap: https://teov.dqwyy.moe/sitemap.xml
